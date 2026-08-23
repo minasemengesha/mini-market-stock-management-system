@@ -207,5 +207,6 @@ INSERT INTO Report ( Report_Content, Report_Generate_Date)
             FROM Orders 
                 GROUP BY Order_Status 
                     HAVING SUM (Order_Quantity) > 150;
+                    ALTER TABLE Products Add Product_Expiry_Date DATE;
                                         /* THE END*/
                                         
