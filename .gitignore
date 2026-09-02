@@ -10,7 +10,7 @@ bin/
 
 # VS Code
 .vscode/
-
+.vs
 # OS files
 .DS_Store
 Thumbs.db
