@@ -137,7 +137,7 @@ The complete documentation is available in the docs/ directory.
 
 ## 📂 Project Structure
 
-Mini-Market-Stock-Management-System/
+mini-market-stock-management-system/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
@@ -168,8 +168,8 @@ Mini-Market-Stock-Management-System/
 
 1. Clone the repository:
   
-   git clone https://github.com/MinaXTech/Mini-Market-Stock-Management-System.git
-   cd Mini-Market-Stock-Management-System
+   git clone https://github.com/minasemengesha/mini-market-stock-management-system.git
+   cd mini-market-stock-management-system
    
 2. Open main.cpp in Code::Blocks or another C++ development environment.
 
