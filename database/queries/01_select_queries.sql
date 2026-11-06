@@ -1,7 +1,7 @@
 USE Stock_Management_System;
 GO
 
--- Selection and projection
+-- Product and stock lookups
 SELECT Product_ID
 FROM Products
 WHERE Product_Name = 'Always Pads';
@@ -29,7 +29,7 @@ WHERE (Product_ID = '4' OR User_ID = '4')
        AND Transaction_Type LIKE 'I%')
       AND Transaction_Date != '2025-01-12';
 
--- Subqueries
+-- Transaction queries
 SELECT Transaction_Quantity
 FROM Transactions
 WHERE EXISTS (
@@ -54,7 +54,7 @@ WHERE Transaction_Quantity > ANY (
     WHERE Product_ID > 3
 );
 
--- Aggregation (extended relational algebra)
+-- Order and product summaries
 SELECT COUNT(*)
 FROM Orders
 WHERE Order_Status = 'pending';
@@ -74,7 +74,7 @@ FROM Orders;
 SELECT AVG(Selling_Price)
 FROM Products;
 
--- Joins (outer joins require extended relational algebra)
+-- Product and order queries
 SELECT p.Product_ID, p.Product_Name, p.Product_Type, p.Product_Description,
        p.Cost_Price, p.Selling_Price
 FROM Products AS p
@@ -96,7 +96,7 @@ FROM Products AS p
 FULL OUTER JOIN Orders AS o
     ON p.Product_ID = o.Product_ID;
 
--- Ordering is SQL-specific; relations have no inherent order.
+-- Sorted results
 SELECT *
 FROM Supplier
 ORDER BY Supplier_First_Name;
@@ -105,7 +105,7 @@ SELECT *
 FROM Products
 ORDER BY Selling_Price;
 
--- Grouping and HAVING (extended relational algebra)
+-- Grouped totals
 SELECT Cost_Price, SUM(Selling_Price)
 FROM Products
 GROUP BY Cost_Price;
