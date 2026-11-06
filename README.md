@@ -138,23 +138,33 @@ The complete documentation is available in the docs/ directory.
 ## 📂 Project Structure
 
 mini-market-stock-management-system/
-├── README.md
-├── LICENSE
-├── .gitignore
-├── main.cpp
-├── database.sql
-├── docs/
-│   ├── Client-Interview-Form.pdf
-│   └── Project-Documentation.pdf
-└── images/
-    └── screenshots/
-        ├── accountant-main-menu.png
-        ├── code-sample.png
-        ├── external-payment-system-main-menu.png
-        ├── help-menu.png
-        ├── login.png
-        ├── owner-main-menu.png
-        └── sample-stock.png
+- README.md
+- LICENSE
+- .gitignore
+src/
+    - main.cpp
+database/
+    setup/
+        - 01_create_database.sql
+        - 02_create_tables.sql
+        - 02_seed_sample_data.sql
+    queries/
+        - 01_select_queries.sql
+    practice/
+        - 01_data_modification.sql
+docs/
+    - Client-Interview-Form.pdf
+    - Project-Documentation.pdf
+images/
+    screenshots/
+        - accountant-main-menu.png
+        - code-sample.png
+        - external-payment-system-main-menu.png
+        - help-menu.png
+        - login.png
+        - owner-main-menu.png
+        - sample-stock.png
+
 ## ⚙️ Getting Started
 
 ### Prerequisites
