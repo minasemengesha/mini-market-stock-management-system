@@ -141,22 +141,22 @@ mini-market-stock-management-system/
 - README.md
 - LICENSE
 - .gitignore
-src/
+- src/
     - main.cpp
-database/
-    setup/
+- database/
+    - setup/
         - 01_create_database.sql
         - 02_create_tables.sql
         - 02_seed_sample_data.sql
-    queries/
+    - queries/
         - 01_select_queries.sql
-    practice/
+    - practice/
         - 01_data_modification.sql
-docs/
+- docs/
     - Client-Interview-Form.pdf
     - Project-Documentation.pdf
-images/
-    screenshots/
+- images/
+    - screenshots/
         - accountant-main-menu.png
         - code-sample.png
         - external-payment-system-main-menu.png
